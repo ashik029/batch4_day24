@@ -6,7 +6,7 @@
             <div class="col-md-8 mx-auto">
                 <div class="card">
                     <div class="card-header">
-                        <h3 class="card-title">Input Student Information Carefully</h3>
+                        <h3 class="card-title">Login Form</h3>
                     </div>
                     <div class="card-body">
                         <?php if (isset($message)){ ?>
@@ -29,7 +29,7 @@
                                 <div class="form-group row">
                                     <label for="" class="col-md-4"></label>
                                     <div class="col-md-8">
-                                        <input type="submit" name="btn" class="btn btn-outline-success btn-block" value="Save Student data"/>
+                                        <input type="submit" name="btn" class="btn btn-outline-success btn-block" value="Login"/>
                                     </div>
                                 </div>
                             </form>

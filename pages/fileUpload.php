@@ -1,4 +1,12 @@
-<?php include 'pages/includes/header.php'?>
+<?php
+    session_start();
+    if (!isset($_SESSION['id']))
+    {
+      header('location: action.php?pages=login');
+    }
+?>
+
+<?php include 'pages/includes/header.php'; ?>
 
 <section class="py-5">
     <div class="container">
@@ -9,6 +17,12 @@
                         <h3 class="card-title">Input Student Information Carefully</h3>
                     </div>
                     <div class="card-body">
+                        <h2>
+                            <?php
+                            session_start();
+                            echo $_SESSION['id'];
+                            ?>
+                        </h2>
                         <?php if (isset($message)){ ?>
                             <h6 class="text-success text-center"><?php echo $message ?></h6>
                         <?php } ?>
@@ -53,4 +67,4 @@
     </div>
 </section>
 
-<?php include 'pages/includes/footer.php'?>
+<?php include 'pages/includes/footer.php';?>

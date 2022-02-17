@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -15,6 +19,7 @@
     </style>
 </head>
 <body>
+<?php if (isset($_SESSION['id'])) { ?>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container">
         <a href="action.php?pages=home"class="navbar-brand">Logo</a>
@@ -25,3 +30,4 @@
         </ul>
     </div>
 </nav>
+<?php } ?>

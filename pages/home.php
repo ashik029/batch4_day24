@@ -9,6 +9,16 @@
                         <h3 class="card-title">Input Student Information Carefully</h3>
                     </div>
                         <div class="card-body">
+<!--                            <h1>-->
+<!--                                --><?php
+//                                session_start();
+//                                echo $_SESSION['mobile'].',';
+//                                unset($_SESSION['mobile']);
+//                                session_destroy();
+//                                echo $_SESSION['name'].',';
+//                                echo $_SESSION['city'].',';
+//                                ?>
+<!--                            </h1>-->
                             <div>
                                 <form action="action.php" method="post" enctype="multipart/form-data">
                                     <div class="form-group row">
@@ -20,7 +30,7 @@
                                     <div class="form-group row">
                                         <label for="" class="col-md-4 col-form-label">Email</label>
                                         <div class="col-md-8">
-                                            <input type="text" name="name" class="form-control" />
+                                            <input type="text" name="email" class="form-control" />
                                         </div>
                                     </div>
                                     <div class="form-group row">
